@@ -21,6 +21,7 @@ final ItemService itemService;
         return itemRepository.findAll();
     }
 
+    @CrossOrigin
     @PostMapping
     public Item save( @RequestBody ItemDto itemDto )
     {

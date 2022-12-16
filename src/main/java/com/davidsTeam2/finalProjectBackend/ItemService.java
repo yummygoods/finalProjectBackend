@@ -22,7 +22,7 @@ public class ItemService {
     }
 
 
-    public void delete(int itemId) {
+    public void delete(Integer itemId) {
 
         itemRepository.deleteById(itemId);
     }
@@ -35,7 +35,7 @@ public class ItemService {
     }
 
 
-    public Item findById(int itemId) {
+    public Item findById(Integer itemId) {
         Optional<Item> item = itemRepository.findById(itemId);
         boolean isPresent = item.isPresent();
         if (isPresent) {
